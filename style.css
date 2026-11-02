@@ -118,11 +118,20 @@ nav ul li a:hover{
 
     transition: 0.3s ease;
 }
+.land-button a{
+    text-decoration: none;
+    color: var(--navy);
+}
+.land-button a:hover{
+    background-color: #202925;
+    color: var(--lime);
+}
 .land-button button:last-child{
     margin-left: 20px;
     background: none;
     color: var(--lime);
-    backdrop-filter: blur(5px);
+    font-weight: bold;
+    font-size: 24px;
 }
 .land-button button:hover{
     transform: scale(1.03);
@@ -157,8 +166,9 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 .ab-left img{
+    border-radius: 12px;
     position: sticky;
-    top: 2px;
+    top: 5px;
     height: 700px;
     width: 600px;
 }
@@ -195,7 +205,6 @@ nav ul li a:hover{
 }
 .ab-right-cont p{
     font-family: "Sora", sans-serif;
-    /* color: #202925; */
     color: var(--offwhite);
     font-size: 22px;
     line-height: 40px;
@@ -226,6 +235,7 @@ nav ul li a:hover{
     font-size: 20px;
 }
 .ab-right img{
+    border-radius: 12px;
     margin-left: 30px;
     height: 450px;
     width: 750px;
@@ -482,7 +492,6 @@ nav ul li a:hover{
 /* achievements */
 
 .achievement{
-    position: relative;
     background-color: var(--navy);
     padding-bottom: 20px;
     height: 120vh;
@@ -493,7 +502,8 @@ nav ul li a:hover{
     top: 37vh;
     z-index: 10;
     text-align: center;
-
+}
+.achieve-position{
     animation: acheive-title linear both;
     animation-timeline: view();
     animation-range: entry 0% exit 100%;
@@ -503,15 +513,14 @@ nav ul li a:hover{
         opacity: 0;
     }
 
-    35% {
+    25% {
         opacity: 1;
     }
 
-    65% {
+    60% {
         opacity: 1;
     }
-
-    75%{
+    70%{
         opacity: 0;
     }
     100% {
@@ -656,6 +665,7 @@ nav ul li a:hover{
     }
 }
 .sponsor-1 img{
+    border-radius: 8px;
     border: solid 1px #101D35;
     height: 200px;
     width: 300px;
@@ -688,7 +698,6 @@ nav ul li a:hover{
     color: #042b78;
 }
 .registration{
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -733,6 +742,7 @@ nav ul li a:hover{
     width: 50%;
     /* padding-left: 100px; */
 }
+
 #register{
     width: 70%;
     background-color: var(--navy);
@@ -762,6 +772,7 @@ select{
 }
 textarea{
     height: 80px;
+    padding: 5px 10px;
 }
 #register button{
     margin: 10px 0px;
@@ -785,7 +796,6 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
-    /* background-color: var(--navy); */
 }
 #foot-p{
     font-family: "Barlow", sans-serif;
@@ -828,6 +838,10 @@ footer{
     font-size: 20px;
     color: var(--offwhite);
     line-height: 40px;
+}
+.foot-links ul li a:hover{
+    /* color: var(--lime); */
+    border-bottom: solid 2px #C8F542;
 }
 .foot-address span{
     font-family: "Sora", sans-serif;
@@ -884,7 +898,6 @@ footer{
     display: flex;
     gap: 10px;
     visibility: visible;
-
     transform: translateX(0);
 }
 #close{
@@ -903,6 +916,7 @@ footer{
     gap: 10px;
     flex-direction: column;
 }
+
 .nav-toggle button{
     margin-top: 20px;
     margin-left: 50px;
@@ -917,6 +931,8 @@ footer{
     font-size: 32px;
 }
 /* landing */
+.landing{
+}
 .landing-title{
     padding-bottom: 20px;
     text-wrap: balance;
@@ -945,8 +961,8 @@ footer{
 }
 .land-button button:last-child{
     margin-left: 0px;
-
 }
+
 /* about us */
 
 .about-us{
@@ -992,8 +1008,8 @@ footer{
     margin-top: 30px;
     display: flex;
     align-items: center;
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 #values{
     margin-left: 30px;
@@ -1025,13 +1041,11 @@ footer{
     align-items: center;
     justify-content: center;
     height: 90px;
-    width: 100px;
+    width: 80%;
     border: solid 1px #F7F8F4;
     padding: 10px;
     border-radius: 50%;
     font-size: 48px;
-    background-color: var(--offwhite);
-    color: #0a1e45;
 }
 .icon-1 p{
     font-family: "Sora", sans-serif;
@@ -1048,6 +1062,10 @@ footer{
 .facility-left{
     padding: 5px;
     margin-left: 0px;
+}
+.facility-left h4{
+    text-align: center;
+    margin-left: 70px;
 }
 .facility-left h1{
     text-align: center;
@@ -1177,12 +1195,12 @@ footer{
 }
 .first-row img{
     border-radius: 16px;
-    height: 265px;
-    width: 90%;
+    height: 250px;
+    width: 100%;
     opacity: 0;
 }
 .second-row{
-    /* margin-top: 110px; */
+    margin-top: 50px;
     padding: 0px 0px;
     display: flex;
     flex-wrap: wrap;
