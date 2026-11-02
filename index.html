@@ -43,9 +43,9 @@
         <section class="landing">
             <div class="landing-title">
                 <h1>ONE GAME.</h1> <span>ONE GOAL. <br> ONE TEAM.</span>
-                <!-- <p>Master your skills. Sharpen your instincts. <br> Own every moment on the feild.</p> -->
+
                 <div class="land-button">
-                    <button type="button">Join the Academy</button>
+                    <button type="button" id="joinacad"><a href=#form>Join the Academy <i class="fa-solid fa-arrow-right"></i></a></button>
                     <button type="button" id="explore">Explore Training</button>
                 </div>
             </div>
@@ -216,16 +216,19 @@
 
     <div class="achievement" id="achieve">
         <div class="achieve-title">
-            <h2>Our Achievement</h2>
-            <p>A Legacy of Excellence</p>
-            <span>Driven by Passion. Defined by victory.</span>
-        </div>
+                <div class="achieve-position">
+                    <h2>Our Achievement</h2>
+                    <p>A Legacy of Excellence</p>
+                    <span>Driven by Passion. Defined by victory.</span>
+                </div>
+            </div>
 
         <div class="achieve-img">
             <div class="first-row">
                 <img src="./image/acheive-1.png" alt="">
                 <img src="./image/acheive-2.png" alt="">
             </div>
+            
             <div class="second-row">
                 <img src="./image/acheive-3.png" alt="">
                 <img src="./image/achieve-4.png" alt="">
@@ -299,7 +302,7 @@
 
     <!-- registration -->
 
-    <div class="register-full">
+    <div class="register-full" id="form">
         <h1 id="head">Your Journey Starts here...</h1>
         <div class="registration">
             <div class="register-left">
@@ -314,20 +317,20 @@
             <div class="register-right">
                 <form action="" id="register">
                     <label for="">Name</label><br>
-                    <input type="text" name="" id="" placeholder="Enter Your Name" required><br>
+                    <input type="text" name="" id="f-name" placeholder="Enter Your Name" required><br>
 
                     <label for="">Gender</label><br><br>
-                    <input type="radio" name="gender" id="" value="male"> <label for="">Male</label>
-                    <input type="radio" name="gender" id="" value="female"> <label for="">Female</label><br><br>
+                    <input type="radio" name="gender" id="gen-male" value="male"> <label for="">Male</label>
+                    <input type="radio" name="gender" id="gen-female" value="female"> <label for="">Female</label><br><br>
 
                     <label for="">Contact Number</label><br>
-                    <input type="number" name="" id="" placeholder="Enter your Number" required><br>
+                    <input type="number" name="" id="co-num" placeholder="Enter your Number" required><br>
 
                     <label for="">Address</label><br>
-                    <textarea name="" id="" placeholder="Enter your address" required></textarea><br>
+                    <textarea name="" id="cont-add" placeholder="Enter your address" required></textarea><br>
 
                     <label for="">Training Program</label><br>
-                    <select name="" id="program">
+                    <select name="" id="program" required>
                         <option value="">Select Training Program</option>
                         <option value="beginner">Beginner Training</option>
                         <option value="skill">Skill Development</option>
@@ -338,6 +341,7 @@
                     </select><br>
 
                     <button type="submit">Register Now <i class="fa-solid fa-arrow-right" id="regis-rit"></i></button>
+                
                 </form>
             </div>
 
